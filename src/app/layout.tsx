@@ -5,7 +5,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Home from "@/components/Home";
 import Skills from "@/components/Skills";
-import Newsletter from "@/components/Newsletter";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Contact";
 
@@ -28,7 +27,6 @@ export default function RootLayout({
         <Home />
         <Skills />
         <Projects />
-        {/* <Newsletter /> */}
         <Footer />
         {/* <main>{children}</main> */}
       </body>
