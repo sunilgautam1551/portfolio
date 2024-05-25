@@ -29,34 +29,35 @@ import {
 } from "react-icons/si";
 
 const techIcons = {
-  HTML: <FaHtml5 className="text-red-600 text-lg" />,
-  CSS: <FaCss3Alt className="text-blue-600 text-lg" />,
-  Javascript: <FaJsSquare className="text-yellow-500 text-lg" />,
-  Typescript: <SiTypescript className="text-blue-500 text-lg" />,
-  "React Js": <FaReact className="text-cyan-500 text-lg" />,
-  "Next Js": <SiNextdotjs className="text-black text-lg" />,
-  "Tailwind CSS": <SiTailwindcss className="text-teal-400 text-lg" />,
-  Bootstrap: <SiBootstrap className="text-purple-600 text-lg" />,
-  JQuery: <SiJquery className="text-blue-400 text-lg" />,
-  "SCSS/SASS": <SiSass className="text-pink-400 text-lg" />,
-  "Node.js": <FaNodeJs className="text-green-600 text-lg" />,
-  "Express.js": <FaNodeJs className="text-gray-700 text-lg" />,
-  MongoDB: <SiMongodb className="text-green-500 text-lg" />,
-  Neo4j: <FaDatabase className="text-blue-600 text-lg" />,
-  SQL: <FaDatabase className="text-gray-700 text-lg" />,
-  RTL: <SiTestinglibrary className="text-red-500 text-lg" />,
-  Jest: <SiJest className="text-red-500 text-lg" />,
-  Enzyme: <FaTools className="text-gray-600 text-lg" />,
-  "Ag grid": <FaDatabase className="text-green-600 text-lg" />,
-  Highcharts: <FaDigitalTachograph className="text-blue-600 text-lg" />,
-  "Google map": <SiGooglemaps className="text-red-500 text-lg" />,
-  "Open layer": <SiGooglemaps className="text-blue-600 text-lg" />,
-  "Vs studio": <SiVisualstudiocode className="text-blue-500 text-lg" />,
-  "vs code": <SiVisualstudiocode className="text-blue-500 text-lg" />,
-  Jira: <SiJira className="text-blue-600 text-lg" />,
-  Bitbucket: <SiBitbucket className="text-blue-500 text-lg" />,
-  Postman: <SiPostman className="text-orange-500 text-lg" />,
-  "Git lab": <SiGitlab className="text-orange-600 text-lg" />,
+  HTML: <FaHtml5 className="text-red-600 mr-2  text-lg" />,
+  CSS: <FaCss3Alt className="text-blue-600 mr-2  text-lg" />,
+  Javascript: <FaJsSquare className="text-yellow-500 mr-2  text-lg" />,
+  Typescript: <SiTypescript className="text-blue-500 mr-2  text-lg" />,
+  "React Js": <FaReact className="text-cyan-500 mr-2 text-lg" />,
+  "Next Js": <SiNextdotjs className="text-black mr-2 text-lg" />,
+  "Tailwind CSS": <SiTailwindcss className="text-teal-400 mr-2 text-lg" />,
+  Bootstrap: <SiBootstrap className="text-purple-600 mr-2 text-lg" />,
+  JQuery: <SiJquery className="text-blue-400 mr-2 text-lg" />,
+  "SCSS/SASS": <SiSass className="text-pink-400 mr-2 text-lg" />,
+  "Node.js": <FaNodeJs className="text-green-600 mr-2 text-lg" />,
+  "Express.js": <FaNodeJs className="text-gray-700 mr-2 text-lg" />,
+  MongoDB: <SiMongodb className="text-green-500 mr-2 text-lg" />,
+  Neo4j: <FaDatabase className="text-blue-600 mr-2 text-lg" />,
+  SQL: <FaDatabase className="text-gray-700 mr-2 text-lg" />,
+  RTL: <SiTestinglibrary className="text-red-500 mr-2 text-lg" />,
+  Jest: <SiJest className="text-red-500 mr-2 text-lg" />,
+  Enzyme: <FaTools className="text-gray-600 mr-2 text-lg" />,
+  "Ag grid": <FaDatabase className="text-green-600 mr-2 text-lg" />,
+  Highcharts: <FaDigitalTachograph className="text-blue-600 mr-2 text-lg" />,
+  "Google map": <SiGooglemaps className="text-red-500 mr-2 text-lg" />,
+  "Open layer": <SiGooglemaps className="text-blue-600 mr-2 text-lg" />,
+  "Vs studio": <SiVisualstudiocode className="text-blue-500 mr-2 text-lg" />,
+  "vs code": <SiVisualstudiocode className="text-blue-500 mr-2 text-lg" />,
+  Jira: <SiJira className="text-blue-600 mr-2 text-lg" />,
+  Bitbucket: <SiBitbucket className="text-blue-500 mr-2 text-lg" />,
+  Postman: <SiPostman className="text-orange-500 mr-2 text-lg" />,
+  "Git lab": <SiGitlab className="text-orange-600 mr-2 text-lg" />,
+  Socket: <FaTools className="text-gray-600 mr-2 text-lg" />,
 };
 
 const cards = [
@@ -139,10 +140,8 @@ const Card = ({ title, technologies }: any) => {
         {technologies.map((tech: any) => (
           <div key={tech} className="flex items-center space-x-2 mr-2 mb-2">
             <span className="inline-flex items-center bg-gray-200 rounded-full p-2 text-sm font-semibold text-gray-800 hover:bg-gray-300 transition duration-200">
-              {techIcons[tech] || (
-                <FaTools className="inline-block mr-2 text-lg" />
-              )}{" "}
-              {tech}
+              {techIcons[tech]}
+              {`${tech}`}
             </span>
           </div>
         ))}

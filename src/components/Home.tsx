@@ -30,13 +30,13 @@ const Home = () => {
   };
 
   return (
-    <div id="home" className="text-white  bg-240046 py-16">
-      <div className="max-w-5xl mx-auto px-4">
+    <div id="home" className="text-white bg-240046 py-16">
+      <div className="mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20">
           <div className="md:w-[25%] flex-shrink-0">
-            <div className="w-64 h-64 md:w-80 md:h-80 mx-auto md:mx-0">
+            <div className="w-64 h-64 md:w-80 md:h-80 mx-auto md:mx-0 md:ml-8">  {/* Added margin-left here */}
               <img
-                className="w-full h-full border-2 border-purple-600 rounded-full shadow-lg hover:shadow-xl transform transition duration-300  object-cover"
+                className="w-full h-full border-2 border-purple-600 rounded-full shadow-lg hover:shadow-xl transform transition duration-300 object-cover"
                 src="/images/userProfile.png"
                 alt="Sunil Image"
               />
